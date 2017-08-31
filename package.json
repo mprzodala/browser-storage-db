@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple db based on browser localStorage or sessionStorage",
   "main": "dist/main.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
     "test": "jest && npm run lint",
     "test:watch": "jest --watch",
