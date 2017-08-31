@@ -47,11 +47,12 @@ describe('LocalStorageDB', () => {
         emptyDB.insert(document);
         expect(mockedEmptyLocalStorage.mocks.setItem).toBeCalled();
     });
-    it('should insert document to DB', () => {
+    it('should insert document to DB and return id of document', () => {
         const document = { name: 'foo5', description: 'bar5' };
-        db.insert(document);
+        const documentId = db.insert(document);
         initialState.push(document);
         expect(mockedLocalStoarge.mocks.setItem.mock.calls.length).toBe(2);
+        expect(typeof documentId).toEqual('string');
     });
     it('should find matched documents in DB', () => {
         const documents = db.find({ name: 'foo2' });

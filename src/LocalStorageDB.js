@@ -32,6 +32,7 @@ class LocalStorageDB {
         const documentId = generateDocumentId();
         data.push(Object.assign({}, document, { id: documentId }));
         this.set(data);
+        return documentId;
     }
 
     find(query) {
