@@ -1,0 +1,5 @@
+coverage/
+webpack.config.js
+.npmignore
+.travis.yml
+.babelrc
