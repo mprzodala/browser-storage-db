@@ -11,24 +11,24 @@ BrowserStorageDB give you posibility to save and find data in localStorage or se
 
 set(documents: [Object]): void
 ```js
-import LocalStorageDB from 'browser-storage-db';
-const db = new LocalStorageDB('testDB', localStorage);
+import BrowserStorageDB from 'browser-storage-db';
+const db = new BrowserStorageDB('testDB', localStorage);
 const initialState = [{ id:'1', name:'foo', desc: 'bar' }, { id:'2', name:'foo2', desc: 'bar2' }];
 db.set(initialState);
 ```
 
 insert(document: Object): String
 ```js
-import LocalStorageDB from 'browser-storage-db';
-const db = new LocalStorageDB('testDB', localStorage);
+import BrowserStorageDB from 'browser-storage-db';
+const db = new BrowserStorageDB('testDB', localStorage);
 const document = { name:'foo', desc: 'bar' };
 const documentId = db.insert(document);
 ```
 
 update(id: String, data: Object): void
 ```js
-import LocalStorageDB from 'browser-storage-db';
-const db = new LocalStorageDB('testDB', localStorage);
+import BrowserStorageDB from 'browser-storage-db';
+const db = new BrowserStorageDB('testDB', localStorage);
 const documentId = '3d3d4sda3sd';
 const document = { name:'foo2', desc: 'bar2' };
 db.update(documentId, document);
@@ -36,18 +36,18 @@ db.update(documentId, document);
 
 find(query: Object): [Object]
 ```js
-import LocalStorageDB from 'browser-storage-db';
-const db = new LocalStorageDB('testDB', localStorage);
+import BrowserStorageDB from 'browser-storage-db';
+const db = new BrowserStorageDB('testDB', localStorage);
 const query = { name: 'foo2' };
 const documents = db.find(query);
 ```
 
 findOne(query: Object): Object
 ```js
-import LocalStorageDB from 'browser-storage-db';
-const db = new LocalStorageDB('testDB', localStorage);
+import BrowserStorageDB from 'browser-storage-db';
+const db = new BrowserStorageDB('testDB', localStorage);
 const query = { name: 'foo2' };
 const document = db.findOne(query);
 ```
 
-To see more complex examples, check out this project's [test suite](./src/LocalStorageDB.test.js).
+To see more complex examples, check out this project's [test suite](./src/BrowserStorageDB.test.js).
