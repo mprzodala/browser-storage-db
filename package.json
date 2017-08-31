@@ -19,6 +19,8 @@
     "browser",
     "db"
   ],
+  "repository": "https://github.com/mprzodala/browser-storage-db",
+  "homepage": "https://github.com/mprzodala/browser-storage-db",
   "author": "Mariusz Przodała",
   "license": "MIT",
   "devDependencies": {
