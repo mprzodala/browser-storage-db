@@ -1,1 +1,1 @@
-export { default } from './LocalStorageDB';
+export { default } from './BrowserStorageDB';

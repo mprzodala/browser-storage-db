@@ -1,7 +1,7 @@
 {
-  "name": "local-storage-db",
+  "name": "browser-storage-db",
   "version": "1.0.0",
-  "description": "Simple db based on browser localStorage",
+  "description": "Simple db based on browser localStorage or sessionStorage",
   "main": "dist/main.js",
   "scripts": {
     "test": "jest && npm run lint",
@@ -15,6 +15,7 @@
   },
   "keywords": [
     "localStorage",
+    "sessionStorage",
     "browser",
     "db"
   ],
